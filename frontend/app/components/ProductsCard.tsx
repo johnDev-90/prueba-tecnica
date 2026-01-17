@@ -17,6 +17,7 @@ const ProductsCard = ({ p }: PropsType) => {
       <div className="card-body">
         <h2 className="card-title">{p.name}</h2>
         <p>{p.description}</p>
+        <span className="text-2xl text-indigo-700 font-bold">${p.price}</span>
         <div className="card-actions justify-end">
           <Link href={`/products?id=${p.id}`} className="btn btn-primary">
             Ver detalles
